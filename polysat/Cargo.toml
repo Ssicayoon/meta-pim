@@ -1,0 +1,66 @@
+[package]
+name = "polysat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+egg = "0.9"
+# isl-rs = "0.2.0"
+isl-rs = {path = "./isl-rs"}
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+colored = "2.0"
+ordered-float = "4.0"
+regex = "1.5"
+rand = "0.8"
+rayon = "1.7"
+chrono = "0.4"
+libc = "0.2.175"
+lazy_static = "1.4"
+# Error handling and logging
+anyhow = "1.0"
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.11"
+
+# [[bin]]
+# name = "polysat_measure"
+# path = "src/bin/polysat_measure.rs"
+# 
+# [[example]]
+# name = "test_candidates"
+# 
+# [[example]]
+# name = "test_dep_aware_pipeline"
+# 
+# [[example]]
+# name = "test_egraph_extraction"
+# 
+# [[example]]
+# name = "test_rational_optimization"
+# 
+# [[example]]
+# name = "test_mlir_cost_extraction"
+# 
+# [[example]]
+# name = "test_gemm_cost_validation"
+# 
+# [[example]]
+# name = "test_gemm_real_performance"
+# 
+# [[example]]
+# name = "test_ntt_real_performance"
+# 
+# [[example]]
+# name = "test_ntt_8192_performance"
+# 
+# [[example]]
+# name = "test_automated_exploration_poc"
+# 
+# [[example]]
+# name = "explore_conv2d"
+
+[dev-dependencies]
+pretty_assertions = "1.4"
+tempfile = "3.8"

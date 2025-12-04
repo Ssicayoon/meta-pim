@@ -91,6 +91,11 @@ this release.
 
 **Component 2 – PolySat front-end (MLIR + polyhedral analysis)**
 
+- **[`polysat/`](polysat/README.md)**  
+  Standalone PolySat framework implementing equality saturation-based polyhedral
+  schedule exploration. Includes ISL bindings, e-graph rewrite rules, 
+  hardware-aware cost models, and end-to-end examples (e.g., GEMM optimization).
+  See [`polysat/README.md`](polysat/README.md) for setup and usage.
 - `scripts/polysat_frontend.sh`  
   C → MLIR → affine → SCoP extraction using cgeist + polygeist-opt + polymer.
 - Key artifacts:

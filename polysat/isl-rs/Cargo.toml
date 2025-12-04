@@ -1,0 +1,20 @@
+[package]
+name = "isl-rs"
+version = "0.2.0"
+authors = ["Kaushik Kulkarni <kaushikcfd@gmail.com>"]
+edition = "2021"
+description = "Rust bindings for Integer Set Library"
+documentation = "https://docs.rs/isl-rs"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/kaushikcfd/isl-rs"
+
+[lib]
+name = "isl_rs"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.2.133"
+
+[build-dependencies]
+fs_extra = "1.2.0"
