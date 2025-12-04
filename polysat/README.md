@@ -22,8 +22,6 @@ PolySat requires **Polygeist** for C-to-MLIR compilation. Configure the environm
 
 > **Note**: You must run `source .env` in each new shell session before using PolySat.
 
-For detailed configuration options (LLVM_DIR, POLYMER_DIR, etc.), see [ENV_VARIABLES.md](ENV_VARIABLES.md).
-
 ## Pipeline Design
 
 The PolySat pipeline consists of four main stages:
